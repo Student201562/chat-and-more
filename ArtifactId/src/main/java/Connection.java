@@ -9,7 +9,7 @@ public class Connection {
         int port = 8189;
 
         Server server = new Server(port);
-
+        //
         ServletContextHandler context = new ServletContextHandler( ServletContextHandler.SESSIONS );
         context.setContextPath( "/" );
 

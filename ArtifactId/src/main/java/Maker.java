@@ -23,7 +23,7 @@ public class Maker extends HttpServlet{
     private void printRes(HttpServletResponse response, String result) throws IOException { // response - ответ
         String reply = "{\"error\":0,\"result\":" + result + "}"; // в формате json что нет ошибок
         response.getOutputStream().write(reply.getBytes("UTF-8"));
-        response.setContentType("application/json; charset=UTF-8"); // если это не написать будет кракозябра
+        //response.setContentType("application/json; charset=UTF-8"); // если это не написать будет кракозябра
         //response.setHeader("Result", "*");
         response.setStatus(HttpServletResponse.SC_OK); // получить статус (200)
     }
