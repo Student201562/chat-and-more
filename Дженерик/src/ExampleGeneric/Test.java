@@ -3,6 +3,8 @@ package ExampleGeneric;
 public class Test {
     public static void main(String[] args) {
         BoxPrinter<Integer> value1 = new BoxPrinter<Integer>(new Integer(10));
+
+        value1.getClass();
         System.out.println(value1);
         Integer intValue1 = value1.getValue();
         BoxPrinter<String> value2 = new BoxPrinter<String>("Hello world");
@@ -19,5 +21,8 @@ public class Test {
     private static void diamondSyntax(){
         // Для ленивых придумали Алмазный синтаксис
         //BoxGeneric<Integer, String> pair = new Pair<>(6, " Apr");
+    }
+    <T extends Number> Number asdf(){
+        return 3.5;
     }
 }
